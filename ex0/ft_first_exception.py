@@ -1,5 +1,5 @@
 def input_temperature(temp_str: str) -> int:
-    print(f"Input date is '{temp_str}'")
+    print(f"Input data is '{temp_str}'")
     return int(temp_str)
 
 
@@ -9,15 +9,14 @@ def test_temperature() -> None:
     try:
         temp: int = input_temperature("25")
     except Exception as error:
-        print(f"Caught input error: {error}")
+        print(f"Caught input_temperature error: {error}")
     else:
         print(f"Temperature is now {temp}°C")
     print()
     try:
         temp = input_temperature("abc")
-        print(f"Temperature is now {temp}°C")
     except Exception as error:
-        print(f"Caught input error: {error}")
+        print(f"Caught input_temperature error: {error}")
     else:
         print(f"Temperature is now {temp}°C")
     print()
