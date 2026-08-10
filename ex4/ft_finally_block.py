@@ -28,7 +28,7 @@ def test_watering_system() -> None:
         water_plant("Carrots")
     except PlantError as error:
         print(f"Caught {error.__class__.__name__}: {error}")
-        print("..ending tests and returning to main")
+        print(".. ending tests and returning to main")
     finally:
         print("Closing watering system")
     print()
@@ -39,7 +39,7 @@ def test_watering_system() -> None:
         water_plant("lettuce")
     except PlantError as error:
         print(f"Caught {error.__class__.__name__}: {error}")
-        print("..ending tests and returning to main")
+        print(".. ending tests and returning to main")
         return
     finally:
         print("Closing watering system")
