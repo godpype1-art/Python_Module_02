@@ -18,7 +18,9 @@ def test_error_types() -> None:
     for value in test_values:
         try:
             garden_operations(value)
-        except Exception as error:
+        except (
+            TypeError, ValueError, ZeroDivisionError, FileNotFoundError
+                ) as error:
             print(f"Caught {error.__class__.__name__}: {error}")
         else:
             print("Operation completed successfully")
